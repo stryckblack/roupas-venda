@@ -1,0 +1,367 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffe4ec, #fff0f5);
+    color: #333;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  header h1 {
+    text-align: center;
+    color: #a9003f;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .produto {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #a9003f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+
+  .produto:hover {
+    transform: translateY(-5px);
+  }
+
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .produto p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .card-produto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-produto .imagem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-produto .info {
+    max-width: 400px;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #a9003f;
+    margin-bottom: 15px;
+  }
+
+  .logo span {
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .titulo {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .preco {
+    font-size: 30px;
+    font-weight: bold;
+    color: #a9003f;
+    margin-bottom: 10px;
+  }
+
+  .parcelamento {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .tamanhos span {
+    display: inline-block;
+    background-color: #eee;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .tamanhos span:hover {
+    background-color: #f29ba8;
+    color: white;
+  }
+
+  .botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .botoes button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .comprar {
+    background-color: #f29ba8;
+    color: white;
+  }
+
+  .comprar:hover {
+    background-color: #d90037;
+  }
+
+  .adicionar {
+    background-color: #a9003f;
+    color: white;
+  }
+
+  .adicionar:hover {
+    background-color: #90002f;
+  }
+
+  .promo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #ffe3eb;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .promo-left {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .promo-right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+
+  .promocao-label {
+    color: #a9003f;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .produto-nome {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .link-site {
+    color: #a9003f;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .pagamento {
+    background-color: #a9003f;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .pagamento h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+  }
+
+  .opcao {
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .opcao.pix {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desconto {
+    color: black;
+    font-weight: bold;
+  }
+
+  .finalizar {
+    width: 100%;
+    padding: 15px;
+    background-color: #f29ba8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+
+  .finalizar:hover {
+    background-color: #d90037;
+  }
+
+  .carrinho {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .carrinho header {
+    background-color: #a9003f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    font-size: 24px;
+  }
+
+  .carrinho h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  th {
+    background-color: #a9003f;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .espaco-linha {
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cupom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 30px 0;
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .cupom input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #a9003f;
+    font-size: 16px;
+    background-color: #fff;
+  }
+
+  .cupom button {
+    padding: 15px 30px;
+    background-color: #a9003f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cupom button:hover {
+    background-color: #90002f;
+  }
+
+  @media (max-width: 768px) {
+    .produtos-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .promo-container {
+      flex-direction: column;
+    }
+
+    .card-produto {
+      flex-direction: column;
+    }
+
+    .botoes {
+      flex-direction: column;
+    }
+
+    .cupom {
+      flex-direction: column;
+    }
+  }
